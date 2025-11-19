@@ -1,5 +1,7 @@
 # Little Bee H1 - 魔改款高性能开源电流探头
 
+https://item.taobao.com/item.htm?ft=t&id=860942806853
+
 本探头在开源Little-Bee-B1项目上进行了改版，主要变更如下：
 
 **优化**
@@ -27,7 +29,50 @@
 - 使用时不能大幅晃动：传感器灵敏度高，地磁场会造成偏置，调零后不宜晃动，否则需重新长按调零；
 - 噪声大：由于噪声略大，不适合低功耗测试，只适合电源电机调试使用。
 
+**版本说明**
 
+所有改动都是在立创EDA专业版上修改的，没有原理图，直接改的PCB
+- LittleBeeH1-30M低成本款原稿V1.0.zip：这个版本还是0.25V/A的，后续改为0.2V/A了
+
+<img width="1708" height="1280" alt="image" src="https://github.com/user-attachments/assets/c49175e4-83d5-4552-a92a-00b82bc52932" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/93494565-0b6c-4ad8-9cbe-ec1254d8001f" />
+<img width="800" height="480" alt="image" src="https://github.com/user-attachments/assets/a4e45970-709f-4de0-a2e0-ee73402d75a8" />
+
+
+
+
+# Little Bee H1 - Optimized High-Performance Open-Source Current Probe
+
+This probe is a revised version based on the open-source Little-Bee-B1 project. The main changes are as follows:
+
+**Optimizations**
+- Bandwidth: The original version had a bandwidth of 10MHz. Now, the small-signal bandwidth in the 0.2V/A range exceeds 30MHz, and the bandwidth in the 1V/A range is no less than 10MHz.
+The two-stage amplifiers have been replaced with AD8130 and LT1886, respectively, with corresponding parameter modifications and compensation applied.
+- Power: The new version features onboard lithium battery charge and discharge management circuitry and includes a built-in rechargeable battery. It can be used with just a coaxial cable connected to an oscilloscope.
+- Cost and Manufacturability: Components have been replaced with domestic alternatives where possible. All through-hole components have been changed to surface-mount devices (SMD) on a single side for easier production. The cover has been replaced with an acrylic panel for a better appearance.
+- Range: A custom 10A magnetic head is provided, allowing users to select based on their actual needs. Additionally, if the magnetic core is removed from the 10A head, leaving only the empty shell, it can measure currents up to 30A.
+
+**Trade-offs**
+- Power Consumption: Due to the change in amplifier selection, power consumption has increased. However, the battery capacity has also been increased and is rechargeable, providing up to 3 hours of battery life.
+- Noise: The increased bandwidth results in higher noise. The current noise level in the green range is 66mVpp (~10mArms).
+
+**Description with Standard 5A Magnetic Head:**
+- Green: 0.2V/A (5x attenuation), ±5A range, 30MHz bandwidth
+- Yellow: 0.2V/A (5x attenuation), ±5A range, 1MHz bandwidth
+- Blue: 1V/A (1x attenuation), ±1.2A range, 1MHz bandwidth
+- Teal: 1V/A (1x attenuation), ±1.2A range, 1MHz bandwidth
+A 10A magnetic head is also included, recommended to be calibrated at 0.1V/A.
+If the magnetic core is removed from the 10A head, leaving only the empty shell, it can measure currents up to 30A. In this case, it is recommended to calibrate at 0.05V/A.
+
+**Notes**
+This probe is a cost-effective, high-performance open-source probe, but it has several limitations:
+- Small Range: Exceeding the range will not damage the probe, but it may cause magnetization. In this case, press the demagnetization button briefly without powering off.
+- Avoid Significant Movement During Use: The sensor is highly sensitive, and the Earth's magnetic field can cause offset. After zeroing, avoid moving the probe significantly; otherwise, long-press the zero button to recalibrate.
+- High Noise: Due to relatively high noise, it is not suitable for low-power testing. It is best used for power supply and motor debugging.
+
+**Version Information**
+All modifications were made using LCEDA Pro. There is no schematic as I am so lazy that the PCB was modified manually and directly without schematics.
+-LittleBeeH1-30M Low-Cost Original Version V1.0.zip: This version still uses 0.25V/A, which was later changed to 0.2V/A.
 
 
 ## 以下为B1原始版本的介绍
