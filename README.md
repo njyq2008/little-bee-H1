@@ -13,7 +13,7 @@ https://item.taobao.com/item.htm?ft=t&id=860942806853
 
 **牺牲**
 - 功耗：由于放大器选型更换，功耗增大，但是电池也增大、且可充电，因此能实现3小时的续航；
-- 噪声：带宽增大导致噪声变大，现在绿色档下噪声为66mVpp (~10mArms)
+- 噪声：带宽增大导致噪声变大，现在绿色档下噪声为66mApp (~10mArms)
 
 **标配5A磁头下的档位说明：**
 绿色：0.2V/A（5x衰减），±5A量程，30MHz带宽
@@ -25,7 +25,7 @@ https://item.taobao.com/item.htm?ft=t&id=860942806853
 
 **提示**
 本探头是一款高性价比高性能的开源探头，但是它有若干缺点：
-- 量程小：**超过量程不会坏**，但是会磁化，此时无需下电需要短按以下消磁按钮；
+- 量程小：**超过量程不会坏**，但是会磁化，此时无需下电需要短按一下消磁按钮；
 - 使用时不能大幅晃动：传感器灵敏度高，地磁场会造成偏置，调零后不宜晃动，否则需重新长按调零；
 - 噪声大：由于噪声略大，不适合低功耗测试，只适合电源电机调试使用。
 
@@ -54,7 +54,7 @@ The two-stage amplifiers have been replaced with AD8130 and LT1886, respectively
 
 **Trade-offs**
 - Power Consumption: Due to the change in amplifier selection, power consumption has increased. However, the battery capacity has also been increased and is rechargeable, providing up to 3 hours of battery life.
-- Noise: The increased bandwidth results in higher noise. The current noise level in the green range is 66mVpp (~10mArms).
+- Noise: The increased bandwidth results in higher noise. The current noise level in the green range is 66mApp (~10mArms).
 
 **Description with Standard 5A Magnetic Head:**
 - Green: 0.2V/A (5x attenuation), ±5A range, 30MHz bandwidth
