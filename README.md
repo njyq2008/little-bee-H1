@@ -23,6 +23,12 @@ https://item.taobao.com/item.htm?ft=t&id=860942806853
 送一款10A磁头，建议标定为0.1V/A.
 10A磁头如果去掉磁芯只留空壳，可以测30A电流，此时建议标定为0.05V/A
 
+**无磁头下（磁场测量）的档位说明：**
+绿色：0.16V/Gs，30MHz带宽
+黄色：0.16V/Gs，1MHz带宽
+深蓝：0.8V/Gs，1MHz带宽
+浅蓝：0.8V/Gs，1MHz带宽
+
 **提示**
 本探头是一款高性价比高性能的开源探头，但是它有若干缺点：
 - 量程小：**超过量程不会坏**，但是会磁化，此时无需下电需要短按一下消磁按钮；
@@ -63,6 +69,12 @@ The two-stage amplifiers have been replaced with AD8130 and LT1886, respectively
 - Teal: 1V/A (1x attenuation), ±1.2A range, 1MHz bandwidth
 A 10A magnetic head is also included, recommended to be calibrated at 0.1V/A.
 If the magnetic core is removed from the 10A head, leaving only the empty shell, it can measure currents up to 30A. In this case, it is recommended to calibrate at 0.05V/A.
+
+**Description without Magnetic Head (for Magnetic Field Measurement):**
+- Green: 0.16V/Gs, 30MHz bandwidth
+- Yellow: 0.16V/Gs, 1MHz bandwidth
+- Blue: 0.8V/Gs, 1MHz bandwidth
+- Teal: 0.8V/Gs, 1MHz bandwidth
 
 **Notes**
 This probe is a cost-effective, high-performance open-source probe, but it has several limitations:
