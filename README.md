@@ -1,6 +1,10 @@
 # Little Bee H1 - 魔改款高性能开源电流探头
 
-https://item.taobao.com/item.htm?ft=t&id=860942806853
+[购买链接Purchase](https://item.taobao.com/item.htm?ft=t&id=860942806853)
+[视频介绍Introduction](https://www.bilibili.com/video/BV1bC3iezEyP/)
+注意：现在出售的版本都是0.2V/A @ 绿色档，这点与视频中不同
+Note：Currently version has a sensitivity of 0.2V/A @ Green mode, which is different from the intro video.
+
 
 本探头在开源Little-Bee-B1项目上进行了改版，主要变更如下：
 
